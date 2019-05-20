@@ -1,1 +1,2 @@
 # parent_disney-UI-joshua_vaughn
+This is a marketing landing page that is geared towards driving users to sign up for the Disney Parent service while they are in the Disney Theme Parks with their kids.
