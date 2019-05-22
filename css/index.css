@@ -245,11 +245,11 @@ footer {
     margin: 10rem 0 3rem 3rem;
     width: 100%;
   }
-  .mid-content .park-assist img {
-    width: 90%;
-    margin: 2rem 0 0 5rem;
+  .mid-content .park-assist .kid-room-img {
+    padding: 3rem 4rem;
+    width: 80%;
   }
-  .mid-content .park-heading {
+  .mid-content .park-assist .park-heading {
     margin: 1rem 1rem 2rem 20rem;
   }
 }

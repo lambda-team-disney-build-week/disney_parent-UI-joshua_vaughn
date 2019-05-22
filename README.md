@@ -13,6 +13,11 @@ The call to action on the website should is a login button that links the user o
 This Marketing site's home page has content and copy that relates to the product that our team is worked on.
 The second page is an "About Us" section that includes images of the team members, and links to one another socials/Github.
 
+The production of the marketing landing page is as follows:
+
+The HTML was set up in a semantic fashion based of of the design file provided in the design file folder inside of this repo.
+Using LESS as a preprocessor the styling was done using a mobile first approach.
+Variables were used for all fonts and buttons facilitating any last minute color changes that may take place.
 
 
 
