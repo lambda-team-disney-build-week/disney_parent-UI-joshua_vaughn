@@ -134,16 +134,16 @@ html {
 }
 html,
 body {
-  font-family: 'Nunito', 'sans-serif';
-  color: #2D3239;
+  font-family: "Nunito", "sans-serif";
+  color: #2d3239;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Nunito', 'sans-serif';
-  color: #7292B8;
+  font-family: "Nunito", "sans-serif";
+  color: #306D96;
   font-weight: bold;
 }
 ul,
@@ -151,20 +151,23 @@ li {
   font-size: 2rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
+  line-height: 1.1;
 }
 h3 {
   font-size: 2.8rem;
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 .nav-container {
   display: inline-flex;
   justify-content: center;
   width: 100%;
   padding: 0.5rem;
+  text-decoration: none;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -173,7 +176,7 @@ p {
     align-items: center;
     padding: 0.25rem 1rem 0.25rem;
     width: 100%;
-    background-color: #7292B8;
+    background-color: #7292b8;
   }
   .nav-container .ham-menu-ic {
     display: inline-flex;
@@ -226,17 +229,19 @@ footer {
     margin: 0 3rem;
   }
   .hook-pitch .best-care {
-    font-size: 2.5rem;
+    margin: 4rem 0 1rem 0;
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 500px) {
   button {
+    margin-top: 3rem;
     width: 90%;
     font-size: 2.85rem;
     font-weight: bold;
     border-radius: 2.5rem;
-    color: #F9FAFA;
-    background-color: #306D96;
+    color: #f9fafa;
+    background-color: #306d96;
     padding: 1rem 1rem;
   }
 }
@@ -255,7 +260,7 @@ footer {
 }
 @media (max-width: 500px) {
   .mid-content .wonderful-time {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 2rem 3rem 1rem 1rem;
   }
 }
@@ -268,4 +273,24 @@ footer {
     font-size: 2rem;
     margin: 2rem 3rem 1rem 1rem;
   }
+}
+.hero-img {
+  margin-bottom: 3rem;
+}
+.offers {
+  margin: 1rem;
+}
+.help {
+  width: 100%;
+}
+.help img {
+  width: 80%;
+  margin: 1rem 0 1rem 8rem;
+}
+.in-img {
+  width: 100%;
+}
+.in-img img {
+  width: 80%;
+  margin: 1rem 0 1rem 0;
 }
