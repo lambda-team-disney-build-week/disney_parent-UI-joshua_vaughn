@@ -143,6 +143,12 @@ h3,
 h4,
 h5 {
   font-family: 'Nunito', 'sans-serif';
+  color: #7292B8;
+  font-weight: bold;
+}
+ul,
+li {
+  font-size: 2rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -212,4 +218,52 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .hook-pitch {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+  }
+  .hook-pitch .best-care {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  button {
+    font-size: 2.85rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    color: #F9FAFA;
+    background-color: #306D96;
+    padding: 1rem;
+  }
+}
+.park-assist {
+  margin: 10rem 0 3rem 3rem;
+  width: 100%;
+}
+.park-assist img {
+  width: 90%;
+  margin: 2rem 0 0 5rem;
+}
+.park-heading {
+  margin: 1rem 1rem 2rem 20rem;
+}
+.wonderful-time {
+  font-size: 2rem;
+  margin: 2rem 3rem 1rem 1rem;
+}
+.room-heading {
+  font-size: 2rem;
+}
+.in-img {
+  margin: 3rem 0;
+  width: 100%;
+}
+.in-img img {
+  width: 80%;
+}
+.in-room {
+  margin: 1rem 0 1rem 1.5rem;
 }
