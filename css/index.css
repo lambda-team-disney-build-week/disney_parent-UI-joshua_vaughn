@@ -155,7 +155,7 @@ h2 {
   line-height: 1.1;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 p {
   font-size: 1.6rem;
@@ -293,4 +293,30 @@ footer {
 .in-img img {
   width: 80%;
   margin: 1rem 0 1rem 0;
+}
+.room-heading {
+  margin: 1rem;
+  font-size: 2.5rem;
+  margin: 2rem 0 2rem 0;
+}
+.givers {
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+.givers img {
+  width: 100%;
+}
+.parent-care {
+  margin: 1rem 0 1rem 10rem;
+}
+.why-complicate {
+  margin: 1rem 0 1rem 2rem;
+  font-size: 2rem;
+}
+.giver-overview {
+  font-size: 2.5rem;
+}
+.cast-attrib {
+  color: #306D96;
+  font-size: 3rem;
 }
