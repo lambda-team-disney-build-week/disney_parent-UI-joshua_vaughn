@@ -1,4 +1,16 @@
 // Mixins Here
 
-
+.flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  .width-100 {
+    width: 100%;
+  }
+  
+  .border-bottom-grey {
+    border-bottom: 1px solid @main-font-color;
+  }
  
