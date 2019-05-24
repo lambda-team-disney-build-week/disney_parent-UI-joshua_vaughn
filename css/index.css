@@ -608,3 +608,209 @@ p {
   width: 100%;
   display: block;
 }
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  position: fixed;
+  height: 44px;
+  background-color: #f6d7b3;
+}
+.top-bar .container {
+  width: 100%;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+  color: #2d3239;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+@media (min-width: 1280px) {
+  .top-bar .container {
+    width: 1280px;
+  }
+}
+.top-bar .container .container-left {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  font-size: 11px;
+}
+.top-bar .container .container-left span {
+  cursor: pointer;
+  margin-right: 25%;
+  font-weight: bold;
+}
+.top-bar .container .container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 3;
+  font-size: 9px;
+}
+.top-bar .container .container-center span {
+  cursor: pointer;
+  margin-right: 5%;
+}
+.top-bar .container .container-center span:last-child {
+  margin-right: 0;
+}
+.top-bar .container .container-center span:hover {
+  text-decoration: underline;
+}
+.top-bar .container .container-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  font-size: 11px;
+  font-weight: bold;
+}
+.top-bar .container .container-right span {
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f6d7b3;
+  border-bottom: 1px solid #2d3239;
+  width: 100%;
+  height: 120px;
+  margin-top: 44px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1280px) {
+  .header {
+    width: 1280px;
+  }
+}
+.header h1 {
+  font-size: 60px;
+  font-family: Didot, serif;
+  font-weight: bold;
+  flex: 8;
+  text-align: center;
+  color: #2d3239;
+}
+.header span {
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header .date {
+  margin-left: 25px;
+  flex: 1;
+}
+.header .temp {
+  text-align: right;
+  margin-right: 25px;
+  flex: 1;
+}
+.tabs {
+  border-bottom: 1px solid #2d3239;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 47px;
+  background-color: #f6d7b3;
+}
+@media (min-width: 1280px) {
+  .tabs {
+    width: 1280px;
+  }
+}
+.tabs .topics {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.tabs .topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #2d3239;
+  background-color: #f6d7b3;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
+}
+.tabs .topics .active-tab {
+  background-color: #f6d7b3;
+  color: #2d3239;
+  border: 2px solid #F4C215;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .cards-container {
+    width: 1200px;
+  }
+}
+.cards-container .card {
+  border-bottom: 1px solid #2d3239;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #f6d7b3;
+  width: 380px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+.cards-container .card .headline {
+  font-size: 25px;
+  font-family: Didot, serif;
+}
+.cards-container .card .author {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.cards-container .card .author .img-container {
+  padding-right: 10px;
+  border-right: 1px solid #F4C215;
+  height: 40px;
+}
+.cards-container .card .author .img-container img {
+  width: 40px;
+}
+.cards-container .card .author span {
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
