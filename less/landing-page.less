@@ -1,16 +1,51 @@
 // header styles //
+.ic-input{
+	@media @phone{
+		
+		display:flex;
+		flex-wrap:wrap;
+		img{
+		display:inline-flex;
+		width:3rem;
+		height: 2rem;
+		h4{
+			white-space: nowrap;
+		}
+	}}
+}
+.ham-menu-ic {
+	
+	@media @phone{
+		padding:1rem;
+		display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:wrap;
+	img{
+		margin-bottom:0.25rem;
+		margin-left:0.4rem;
+	}
+}}
 .nav-text{
+	
 	font-size:1rem;
+	color:@contrast-font-color;
 }
 .hook-pitch {
 	@media @phone {
 		display: flex;
 		flex-direction: column;
 		margin: 0 3rem;
-		
+	.never-late{
+		margin:0;
+		color:@btn-bg;
+		font-size:3.2rem;
+		font-weight: bold;
+	}	
 		.best-care {
 			margin: 4rem 0 1rem 0;
 			font-size: 2.8rem;
+			line-height: 1.25;
 			
 		}
 	}
@@ -40,14 +75,20 @@ button {
 			}
 
 			.park-heading {
-				margin: 1rem 1rem 2rem 20rem;
+				width:100%;
+				margin: 0.5rem 1.8rem 2rem 25rem;
+				color:@btn-bg;
+				font-weight: bolder;
+				font-size:3rem;
 			}
 		}
 	}
 	.wonderful-time {
 		@media @phone {
-			font-size: 2.5rem;
-			margin: 2rem 3rem 1rem 1rem;
+			margin:0;
+			line-height: 1.25;
+			font-size: 2.2rem;
+		
 		}
 
 		.room-heading {
@@ -67,7 +108,12 @@ button {
 	margin-bottom:3rem;
 }
 .offers{
-	margin: 1rem;
+	
+	color:@btn-bg;
+	font-size: 3.8rem;
+	strong{
+		font-weight: bolder;
+	}
 }
 .help{
 	
