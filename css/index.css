@@ -301,10 +301,6 @@ footer {
     font-size: 2.2rem;
   }
 }
-.mid-content .wonderful-time .room-heading {
-  font-size: 2rem;
-  margin: 1rem 0;
-}
 @media (max-width: 500px) {
   .bottom-content {
     font-size: 2rem;
@@ -335,10 +331,19 @@ footer {
   width: 80%;
   margin: 1rem 0 1rem 0;
 }
+.in-room {
+  padding: 1rem;
+  margin: auto;
+  color: #306d96;
+  font-weight: bolder;
+}
 .room-heading {
-  margin: 1rem;
-  font-size: 2.5rem;
-  margin: 2rem 0 2rem 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2.4rem;
+  line-height: 1.2;
 }
 .givers {
   margin: 1rem 0 1rem 0;
@@ -348,11 +353,17 @@ footer {
   width: 100%;
 }
 .parent-care {
+  color: #306d96;
   margin: 1rem 0 1rem 10rem;
 }
 .why-complicate {
-  margin: 1rem 0 1rem 2rem;
+  padding: 1rem;
+  color: #306d96;
+  display: block;
+  text-align: center;
+  line-height: 1.3;
   font-size: 2rem;
+  width: 80%;
 }
 .giver-overview {
   font-size: 2.5rem;
