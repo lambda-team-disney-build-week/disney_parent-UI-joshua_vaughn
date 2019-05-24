@@ -38,6 +38,5 @@ class TabCard {
 		this.cardElement.forEach(card => (card.style.display = "flex"));
 	}
 }
-
 let tabs = document.querySelectorAll(".tab");
 tabs = Array.from(tabs).forEach(tabLink => new TabLink(tabLink));

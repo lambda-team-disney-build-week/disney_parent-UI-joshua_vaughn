@@ -511,7 +511,8 @@ p {
   align-items: none;
   flex-direction: row;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 2rem;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
@@ -532,7 +533,7 @@ p {
 }
 .cards-container .card .headline {
   font-size: 25px;
-  font-family: Didot, serif;
+  font-family: 'Lido', serif;
 }
 .cards-container .card .author {
   display: flex;
@@ -550,8 +551,8 @@ p {
   width: 40px;
 }
 .cards-container .card .author span {
-  padding-left: 10px;
-  font-size: 12px;
+  padding-left: 1rem;
+  font-size: 15rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -571,13 +572,25 @@ p {
   }
 }
 .tabs .topics {
+  width: 100%;
   display: flex;
-  justify-content: none;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .tabs .topics {
+    margin-top: 125rem;
+    padding: 1rem;
+    height: 10rem;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .tabs .topics .title {
-  font-size: 12px;
+  font-size: 2rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -590,7 +603,7 @@ p {
   background-color: #2d3239;
   margin: 0 5px;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 2rem;
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: bold;
@@ -604,9 +617,20 @@ p {
   border: 2px solid #2d3239;
 }
 .topics {
-  margin-top: 120rem;
+  margin-top: 100rem;
   width: 100%;
   display: block;
+}
+@media (max-width: 500px) {
+  .topics {
+    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
 }
 .top-bar {
   width: 100%;
