@@ -432,14 +432,17 @@ footer {
   margin-top: -10px;
   margin-left: -20px;
 }
+body {
+  width: 100%;
+}
 h1 {
-  display: block;
+  display: flex;
   text-align: center;
 }
 @media (max-width: 500px) {
   h1 {
     width: 100%;
-    font-size: 10rem;
+    font-size: 20rem;
     font-style: bold;
   }
 }
@@ -449,28 +452,16 @@ h1 {
   }
 }
 .parent-team {
-  display: block;
+  display: flex;
+  align-items: flex-start;
   font-family: 'Waltograph', sans-serif;
-  font-size: 10rem;
-  margin: -30rem 5rem 0 -75rem;
+  font-size: 20rem;
 }
 @media (max-width: 500px) {
   .parent-team {
-    margin: -40rem 5rem 0 -12rem;
     display: block;
     font-family: 'Waltograph', sans-serif;
     font-size: 4rem;
-  }
-}
-.castle-img {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  height: 80rem;
-}
-@media (max-width: 500px) {
-  .castle-img {
-    margin-bottom: 10rem;
   }
 }
 p {
@@ -506,14 +497,11 @@ p {
   font-family: 'Lido', serif;
 }
 .tabs {
+  display: flex;
+  align-items: flex-end;
   background-color: #2d3239;
 }
-@media (min-width: 1280px) {
-  .tabs {
-    width: 1280px;
-  }
-}
-.tabs .topics {
+.topics {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -522,7 +510,7 @@ p {
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .tabs .topics {
+  .topics {
     margin-top: 125rem;
     padding: 1rem;
     height: 10rem;
@@ -531,12 +519,12 @@ p {
     justify-content: space-evenly;
   }
 }
-.tabs .topics .title {
+.topics .title {
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
-.tabs .topics .tab {
+.topics .tab {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -550,18 +538,19 @@ p {
   cursor: pointer;
   font-weight: bold;
 }
-.tabs .topics .tab:hover {
+.topics .tab:hover {
   text-decoration: underline;
 }
-.tabs .topics .active-tab {
+.topics .active-tab {
   background-color: #2d3239;
   color: #2d3239;
   border: 2px solid #2d3239;
 }
 .topics {
+  align-content: flex-start;
   margin-top: 100rem;
   width: 100%;
-  display: block;
+  display: flex;
 }
 @media (max-width: 500px) {
   .topics {
@@ -575,7 +564,6 @@ p {
   }
 }
 .top-bar {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: none;
@@ -585,7 +573,6 @@ p {
   background-color: #f6d7b3;
 }
 .top-bar .container {
-  width: 100%;
   display: flex;
   justify-content: none;
   align-items: none;
@@ -648,8 +635,6 @@ p {
   align-items: center;
   flex-direction: row;
   background-color: #f6d7b3;
-  border-bottom: 1px solid #2d3239;
-  width: 100%;
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
@@ -683,12 +668,10 @@ p {
   flex: 1;
 }
 .tabs {
-  border-bottom: 1px solid #2d3239;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
   height: 47px;
   background-color: #f6d7b3;
 }

@@ -1,14 +1,14 @@
 // about styles //
-.container{
-    
-   
+body{
+width:100%;
 }
+
 h1{
-    display:block;
+    display:flex;
     text-align: center;
     @media @phone {
         width:100%;
-        font-size:10rem;
+        font-size:20rem;
         font-style: bold;   
     }
 }
@@ -18,28 +18,21 @@ h2{
     }
 }
 .parent-team{
-    display:block;
+  
+    display:flex;
+    align-items: flex-start;
     font-family: 'Waltograph', sans-serif;
-    font-size: 10rem;
-    margin: -30rem 5rem 0 -75rem;
+    font-size: 20rem;
+  
   @media @phone{
-      margin: -40rem 5rem 0 -12rem;
+   
     display:block;
     font-family: 'Waltograph', sans-serif;
     font-size: 4rem;
     
 }}
 
-.castle-img{
-    display:flex;
-    justify-content: center;
-    align-items:baseline;
-    height: 80rem;
-    
-    @media @phone {
-        margin-bottom: 10rem;
-    }
-}
+
 p{
     font-family: 'Lato', sans-serif;
     display:flex;
@@ -82,14 +75,10 @@ p{
     }
   
   .tabs {
-    // .border-bottom-grey();
-    // .flex(center, center);
-  
-   
-    background-color:@main-font-color;
-    @media(min-width: 1280px){
-      width: 1280px;
-    }
+   display:flex;
+   align-items: flex-end;
+  background-color:@main-font-color;
+  }
     .topics {
      
       width:100%;
@@ -112,6 +101,7 @@ p{
       }
       .tab {
         .flex(space-evenly, center);
+       
         color:@main-font-color;
         background-color: @main-font-color;
         margin: 0 5px;
@@ -130,11 +120,12 @@ p{
         border: 2px solid @main-font-color;
       }
     }
-  }
+  
   .topics{
+    align-content: flex-start;
       margin-top:100rem;
       width:100%;
-      display:block;
+      display:flex;
       @media @phone{
         margin:1rem;
         width:100%;
