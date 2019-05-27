@@ -1,51 +1,110 @@
 // Navigation Styles //
 
-.nav-container {
-	display: inline-flex;
-	justify-content: center;
-	width: 100%;
-	padding: 0.5rem;
-	text-decoration: none;
-	font-size:3rem;
+// mobile view styles for nav (max-width:500px;) //
 
-	@media @phone {
-		display: inline-flex;
-		justify-content: space-evenly;
-		align-items: center;
-		padding: 0.25rem 1rem 0.25rem;
-		width: 100%;
-		background-color: @nav-bg-color;
-		.ham-menu-ic {
-			display: inline-flex;
-			justify-content: flex-start;
-			align-items: flex-start;
-		}
+.nav-container{
+background:@nav-bg-color;
+
+@media @phone {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem .5rem 0rem .5rem;
+	width: 100%;
+	background: @nav-bg-color;
+
+.ham-menu-ic {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items:center;
+}
 		a {
 			display: none;
-		}
-		.logo {
-			display: inline-flex;
-			padding: 0 15rem;
-			width: 100%;
-			justify-content: center;
-			align-items: center;
-		}
-		.ic-input {
-			display: flex;
-			justify-content: flex-end;
-			align-items: flex-end;
-		}
-	}
-	.nav-bar {
-		display: inline-flex;
-		width: 100%;
-		@media @phone {
-			display: block;
-			width: 100%;
-		}
-	}
 }
 
-.hero-img img {
-	width: 100%;
+		.ic-input {
+			display:flex;
+			flex-wrap:wrap;
+			justify-content: center;
+			align-items:center;
+			
+			img{
+
+				display:none;
+				@media @phone{
+			display:block;
+			width:30%;
+			height:40%;
+}}}
+
+.nav-text{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items:center;
+	font-size:1rem;
+	color:@contrast-font-color;
+
+}}}
+
+
+
+// desktop styles below //
+
+.nav-text, .ham-menu-ic, .ic-input{
+	display:none;
 }
+
+.nav-bar{
+	
+	display:inline-flex;
+	width:100%;
+	height:10rem;
+	align-content: space-around;
+	align-items: center;
+
+	.logo-desk{
+		padding:1rem;
+display:inline-flex;
+justify-content: flex-start;
+height:10rem;
+width:60rem;
+
+	@media @phone{
+		display:none;
+	}}
+	
+	a{
+	text-decoration:none;
+	margin-right:4rem;
+	padding:1rem;
+	display:inline-flex;
+	justify-content: space-between;
+	font-size:2rem;
+	color:@contrast-font-color;
+	
+	}
+	@media @phone{
+
+		display:none;
+}}
+.logo-mob{
+	display:none;
+
+	@media @phone{
+		display:inline-flex;
+	}
+}
+.up{
+	border:1.5px solid @contrast-font-color;
+}
+
+
+	
+
+
+
+
+

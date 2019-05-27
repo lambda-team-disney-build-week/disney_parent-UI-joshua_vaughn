@@ -1,9 +1,6 @@
 .width-100 {
   width: 100%;
 }
-.border-bottom-grey {
-  border-bottom: 1px solid #2d3239;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,74 +134,138 @@ table {
 }
 html {
   font-size: 62.5%;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
-ul,
-li {
-  font-size: 2rem;
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
 }
 h2 {
-  font-size: 3rem;
-  line-height: 1.1;
+  font-size: 3.2rem;
+  padding-bottom: 10px;
 }
-h3 {
-  font-size: 2.3rem;
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
 }
 p {
+  line-height: 1.5;
   font-size: 1.6rem;
-  line-height: 1.1;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
 }
 .nav-container {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 3rem;
+  background: #7292b8;
 }
 @media (max-width: 500px) {
   .nav-container {
-    display: inline-flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 1rem 0.25rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
     width: 100%;
-    background-color: #7292b8;
+    background: #7292b8;
   }
   .nav-container .ham-menu-ic {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .nav-container a {
     display: none;
   }
-  .nav-container .logo {
-    display: inline-flex;
-    padding: 0 15rem;
-    width: 100%;
+  .nav-container .ic-input {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .nav-container .ic-input {
+  .nav-container .ic-input img {
+    display: none;
+  }
+  .nav-container .nav-text {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #f9fafa;
   }
 }
-.nav-container .nav-bar {
+@media (max-width: 500px) and (max-width: 500px) {
+  .nav-container .ic-input img {
+    display: block;
+    width: 30%;
+    height: 40%;
+  }
+}
+.nav-text,
+.ham-menu-ic,
+.ic-input {
+  display: none;
+}
+.nav-bar {
   display: inline-flex;
   width: 100%;
+  height: 10rem;
+  align-content: space-around;
+  align-items: center;
+}
+.nav-bar .logo-desk {
+  padding: 1rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  height: 10rem;
+  width: 60rem;
 }
 @media (max-width: 500px) {
-  .nav-container .nav-bar {
-    display: block;
-    width: 100%;
+  .nav-bar .logo-desk {
+    display: none;
   }
 }
-.hero-img img {
-  width: 100%;
+.nav-bar a {
+  text-decoration: none;
+  margin-right: 4rem;
+  padding: 1rem;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: #f9fafa;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+}
+.logo-mob {
+  display: none;
+}
+@media (max-width: 500px) {
+  .logo-mob {
+    display: inline-flex;
+  }
+}
+.up {
+  border: 1.5px solid #f9fafa;
 }
 footer {
   color: #22283B;
@@ -215,43 +276,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 500px) {
-  .ic-input {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ic-input img {
-    display: inline-flex;
-    width: 3rem;
-    height: 2rem;
-  }
-  .ic-input img h4 {
-    white-space: nowrap;
-  }
-}
-@media (max-width: 500px) {
-  .ham-menu-ic {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .ham-menu-ic img {
-    margin-bottom: 0.25rem;
-    margin-left: 0.4rem;
-  }
-}
-.nav-bar {
-  display: inline-flex;
-  justify-content: space-evenly;
-  text-decoration: none;
-}
-.nav-text {
-  display: inline-flex;
-  font-size: 1rem;
-  color: #f9fafa;
 }
 @media (max-width: 500px) {
   .hook-pitch {
@@ -328,7 +352,6 @@ footer {
 }
 .help img {
   width: 80%;
-  margin: 1rem 0 1rem 8rem;
 }
 .in-img {
   width: 100%;
@@ -432,17 +455,14 @@ footer {
   margin-top: -10px;
   margin-left: -20px;
 }
-body {
-  width: 100%;
-}
 h1 {
-  display: flex;
+  display: block;
   text-align: center;
 }
 @media (max-width: 500px) {
   h1 {
     width: 100%;
-    font-size: 20rem;
+    font-size: 10rem;
     font-style: bold;
   }
 }
@@ -452,16 +472,28 @@ h1 {
   }
 }
 .parent-team {
-  display: flex;
-  align-items: flex-start;
+  display: block;
   font-family: 'Waltograph', sans-serif;
-  font-size: 20rem;
+  font-size: 10rem;
+  margin: -30rem 5rem 0 -75rem;
 }
 @media (max-width: 500px) {
   .parent-team {
+    margin: -40rem 5rem 0 -12rem;
     display: block;
     font-family: 'Waltograph', sans-serif;
     font-size: 4rem;
+  }
+}
+.castle-img {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 80rem;
+}
+@media (max-width: 500px) {
+  .castle-img {
+    margin-bottom: 10rem;
   }
 }
 p {
@@ -497,11 +529,14 @@ p {
   font-family: 'Lido', serif;
 }
 .tabs {
-  display: flex;
-  align-items: flex-end;
   background-color: #2d3239;
 }
-.topics {
+@media (min-width: 1280px) {
+  .tabs {
+    width: 1280px;
+  }
+}
+.tabs .topics {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -510,7 +545,7 @@ p {
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .topics {
+  .tabs .topics {
     margin-top: 125rem;
     padding: 1rem;
     height: 10rem;
@@ -519,12 +554,12 @@ p {
     justify-content: space-evenly;
   }
 }
-.topics .title {
+.tabs .topics .title {
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
-.topics .tab {
+.tabs .topics .tab {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -538,19 +573,18 @@ p {
   cursor: pointer;
   font-weight: bold;
 }
-.topics .tab:hover {
+.tabs .topics .tab:hover {
   text-decoration: underline;
 }
-.topics .active-tab {
+.tabs .topics .active-tab {
   background-color: #2d3239;
   color: #2d3239;
   border: 2px solid #2d3239;
 }
 .topics {
-  align-content: flex-start;
   margin-top: 100rem;
   width: 100%;
-  display: flex;
+  display: block;
 }
 @media (max-width: 500px) {
   .topics {
@@ -728,7 +762,6 @@ p {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid #2d3239;
   display: flex;
   justify-content: space-between;
   align-items: none;
