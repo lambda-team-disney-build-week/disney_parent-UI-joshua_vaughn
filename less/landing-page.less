@@ -1,41 +1,86 @@
-
-.hook-pitch {
-	@media @phone {
-		display: flex;
-		flex-direction: column;
-		margin: 0 3rem;
-	.never-late{
-		margin:0;
-		color:@btn-bg;
-		font-size:3.2rem;
-		font-weight: bold;
-	}	
-		.best-care {
-			margin: 4rem 0 1rem 0;
-			font-size: 2.8rem;
-			line-height: 1.25;
-			
-		}
+header{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	@media @phone{
+		display:inline-flex;
+		justify-content: flex-start;
 	}
 }
 
-button {
+.hero-img{
+	
+	height:50rem;
+	width: 60%;
+
 	@media @phone {
-		margin-top:3rem;
+		width:100%;
+	}
+}
+.hook-pitch {
+	
+		width:40%;
+		height:50rem;
+		padding:1rem;
+		
+		@media @phone {
+		
+		
+		width:100%;
+		
+		
+}}
+.never-late{
+    display:flex;
+	font-size:4rem;
+	color:@btn-bg;
+	width:100%;
+	font-weight: bolder;
+}
+
+.best-care{
+
+display:flex;
+font-size:3rem;
+width:100%;
+
+	@media @phone{
+	
+font-size:2.5rem;
+width:100%;
+	}
+}
+.become-parent {
+	
+		
 		width: 90%;
 		font-size: 2.85rem;
 		font-weight: bold;
 		border-radius: 2.5rem;
 		color: @btn-font;
-		background-color: @btn-bg;
+		background-color: @nav-bg-color;
 		padding: 1rem 1rem;
-	}
-}
+
+			@media @phone {
+				
+				width: 90%;
+				font-size: 2.85rem;
+				font-weight: bold;
+				border-radius: 2.5rem;
+				color: @btn-font;
+				background-color: @nav-bg-color;
+				padding: 1rem 1rem;
+				}}
+
+
+
+
 .mid-content {
+
 	@media @phone {
-		.park-assist {
-			margin: 10rem 0 3rem 3rem;
-			width: 100%;
+		// .park-assist {
+			
+		// 	width: 100%;
 
 			.kid-room-img {
 				padding: 3rem 4rem;
@@ -44,7 +89,7 @@ button {
 
 			.park-heading {
 				width:100%;
-				margin: 0.5rem 1.8rem 2rem 25rem;
+				
 				color:@btn-bg;
 				font-weight: bolder;
 				font-size:3rem;
@@ -53,22 +98,20 @@ button {
 	}
 	.wonderful-time {
 		@media @phone {
-			margin:0;
+			
 			line-height: 1.25;
 			font-size: 2.2rem;
 		}
 	}
-}
+
 
 .bottom-content {
 	@media @phone {
 		font-size: 2rem;
-		margin: 2rem 3rem 1rem 1rem;
+		
 	}
 }
-.hero-img{
-	margin-bottom:3rem;
-}
+
 .offers{
 	
 	color:@btn-bg;
@@ -82,7 +125,7 @@ button {
 	width:100%;
 	img{
 		width:80%;
-		// margin: 1rem 0 1rem 8rem;
+	
 	}
 }
 .in-img{
@@ -91,12 +134,12 @@ button {
 	width:100%;
 	img{
 		width:80%;
-		margin: 1rem 0 1rem 0;
+		
 	}
 }
 .in-room{
 	padding:1rem;
-	margin:auto;
+	
 	color:@btn-bg;
 	font-weight: bolder;
 }
@@ -110,7 +153,7 @@ button {
 	
 }
 .givers{
-	margin:1rem 0 1rem 0;
+	
 	width:100%;
 	img{
 		width:100%;
@@ -118,7 +161,7 @@ button {
 }
 .parent-care{
 color:@btn-bg;
-	margin: 1rem 0 1rem 10rem;
+	
 }
 .why-complicate{
 	padding:1rem;
@@ -142,12 +185,9 @@ color:@btn-bg;
 	font-size:3.5rem;
 		
 }
-.attr-text{
-	margin-left:4rem;
-margin-top: -4rem;
-}
+
 .attr-1, .attr-2, .attr-3, .attr-4, .attr-5, .attr-6{
-	margin: 1rem 0;
+	
 	line-height: 1.5;
 	height:1.5%;
 	width: 4%;
@@ -184,6 +224,5 @@ margin-top: -4rem;
 	border-right-color: @main-bg-color;
 	border-left: 0;
 	border-bottom: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+	
 }
